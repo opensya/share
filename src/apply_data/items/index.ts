@@ -1,0 +1,10 @@
+export * as avatar from "./avatar";
+export * as availability from "./availability";
+export * as cv from "./cv";
+export * as desiredGrossSalary from "./desiredGrossSalary";
+export * as educationLevel from "./educationLevel";
+export * as email from "./email";
+export * as firstName from "./firstName";
+export * as lastName from "./lastName";
+export * as motivation from "./motivation";
+export * as phone from "./phone";
