@@ -65,7 +65,7 @@ export function getApplyDataUploadOptions({
   return uploadOptions;
 }
 
-export function getApplyDataOptionsList({
+export function ApplyDataOptionsList({
   $t,
   applyDataConfigs,
 }: {

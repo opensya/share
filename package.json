@@ -1,6 +1,6 @@
 {
   "name": "@opensya/share",
-  "version": "0.28.1",
+  "version": "0.28.2",
   "repository": "opensya/share",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -11,20 +11,12 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "browser": "./dist/index.mjs",
-      "default": "./dist/index.mjs"
+      "require": "./dist/index.js"
     },
-    "./browser": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/browser/index.mjs",
-      "default": "./dist/browser/index.mjs"
-    },
-    "./node": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "default": "./dist/index.mjs"
+    "./set-globals": {
+      "types": "./dist/set-globals.d.ts",
+      "import": "./dist/set-globals.mjs",
+      "require": "./dist/set-globals.js"
     }
   },
   "publishConfig": {

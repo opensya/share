@@ -1,5 +1,5 @@
 export const getApiUrl = () => {
-  return API_BASE_URL;
+  return apiBaseUrl;
 };
 
 export const isBrowser = () => {

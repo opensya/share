@@ -1,10 +1,16 @@
-import { defineConfig } from '@rslib/core';
+import { defineConfig } from "@rslib/core";
 
 export default defineConfig({
   lib: [
     {
-      format: 'esm',
-      syntax: 'es2020',
+      source: {
+        entry: {
+          index: "./src/index.ts",
+          "set-globals": "./src/set-globals.ts",
+        },
+      },
+      format: "esm",
+      syntax: "es2020",
       dts: true,
       autoExternal: {
         dependencies: true,
@@ -14,8 +20,14 @@ export default defineConfig({
       },
     },
     {
-      format: 'cjs',
-      syntax: 'es2020',
+      source: {
+        entry: {
+          index: "./src/index.ts",
+          "set-globals": "./src/set-globals.ts",
+        },
+      },
+      format: "cjs",
+      syntax: "es2020",
       dts: true,
       autoExternal: {
         dependencies: true,
@@ -28,14 +40,14 @@ export default defineConfig({
 
   output: {
     externals: {
-      '@babel/core': '@babel/core',
-      '@babel/parser': '@babel/parser',
-      '@babel/traverse': '@babel/traverse',
-      '@babel/types': '@babel/types',
-      'node:module': 'node:module',
-      module: 'module',
-      fs: 'fs',
-      path: 'path',
+      "@babel/core": "@babel/core",
+      "@babel/parser": "@babel/parser",
+      "@babel/traverse": "@babel/traverse",
+      "@babel/types": "@babel/types",
+      "node:module": "node:module",
+      module: "module",
+      fs: "fs",
+      path: "path",
     },
   },
 });

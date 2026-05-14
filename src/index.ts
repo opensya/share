@@ -1,3 +1,5 @@
+import "./set-globals";
+
 export * from "./config";
 export * from "./user";
 export * from "./job";
@@ -9,4 +11,3 @@ export * from "./doc";
 export * from "./currency";
 export * from "./types";
 export * from "./utils";
-export * from "./set-globals";

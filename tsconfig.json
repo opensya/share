@@ -6,13 +6,11 @@
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
     "skipLibCheck": true,
-    "typeRoots": [
-      "./types"
-    ],
     "paths": {
       "@share": [
         "./src"
@@ -23,6 +21,7 @@
     },
   },
   "include": [
-    "src"
+    "src/**/*.ts",
+    "src/**/*.d.ts"
   ],
 }
