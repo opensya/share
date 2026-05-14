@@ -46,6 +46,7 @@
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^25.6.0",
     "esbuild": "^0.28.0",
+    "lodash": "^4.18.1",
     "mongoose": "^9.4.1",
     "ofetch": "^1.5.1",
     "pkg": "^5.8.1",
