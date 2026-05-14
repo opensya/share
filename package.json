@@ -5,10 +5,7 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "private": "false",
+  "private": false,
   "sideEffects": false,
   "exports": {
     ".": {
@@ -30,6 +27,12 @@
       "default": "./dist/index.mjs"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rslib",
     "dev": "tsx rslib --watch",
