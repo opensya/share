@@ -9,3 +9,4 @@ export * from "./doc";
 export * from "./currency";
 export * from "./types";
 export * from "./utils";
+export * from "./set-globals";
