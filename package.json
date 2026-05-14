@@ -12,11 +12,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-    },
-    "./set-globals": {
-      "types": "./dist/set-globals.d.ts",
-      "import": "./dist/set-globals.mjs",
-      "require": "./dist/set-globals.js"
     }
   },
   "publishConfig": {
