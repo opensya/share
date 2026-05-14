@@ -1,5 +1,4 @@
-import "./set-globals";
-
+export * from "./global-types";
 export * from "./config";
 export * from "./user";
 export * from "./job";
