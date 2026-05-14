@@ -1,1 +1,1 @@
-curl -o- https://raw.githubusercontent.com/domutala/worcable/develop/install.sh | bash
+# OpenSya share
