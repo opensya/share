@@ -1,3 +1,5 @@
+import { ApplyDataOptions } from "./apply_data";
+
 export * from "./set-globals";
 export * from "./config";
 export * from "./user";
@@ -10,3 +12,22 @@ export * from "./doc";
 export * from "./currency";
 export * from "./types";
 export * from "./utils";
+
+declare global {
+  // @ts-ignore
+  var _: typeof import("lodash");
+  var z: typeof import("zod");
+
+  var apiBaseUrl: string;
+  var applyDataOptionsList: (ApplyDataOptions & { key: string })[];
+}
+
+declare module "lodash" {
+  interface LoDashStatic {
+    isArrayString(value?: any): boolean;
+    sleep(
+      /** @default 500 */
+      time?: number
+    ): Promise<void>;
+  }
+}

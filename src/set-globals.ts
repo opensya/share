@@ -1,6 +1,5 @@
 import lodash from "lodash";
 import * as zod from "zod";
-import { ApplyDataOptions } from "./apply_data";
 
 if (!globalThis._) {
   globalThis._ = lodash;
@@ -23,22 +22,3 @@ if (!globalThis._) {
 }
 
 if (!globalThis.z) globalThis.z = zod;
-
-declare global {
-  // @ts-ignore
-  var _: typeof import("lodash");
-  var z: typeof import("zod");
-
-  var apiBaseUrl: string;
-  var applyDataOptionsList: (ApplyDataOptions & { key: string })[];
-}
-
-declare module "lodash" {
-  interface LoDashStatic {
-    isArrayString(value?: any): boolean;
-    sleep(
-      /** @default 500 */
-      time?: number
-    ): Promise<void>;
-  }
-}
