@@ -1,6 +1,6 @@
 {
   "name": "@opensya/share",
-  "version": "0.28.10",
+  "version": "0.29.1-alpha.0",
   "repository": "opensya/share",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -26,6 +26,7 @@
     "dist"
   ],
   "scripts": {
+    "publish:local": "tsx scripts/publish-local.ts",
     "build": "rslib",
     "dev": "tsx rslib --watch",
     "typecheck": "tsc --noEmit"
@@ -39,20 +40,20 @@
   "packageManager": "pnpm@10.32.1",
   "devDependencies": {
     "@babel/core": "^7.29.0",
-    "@changesets/cli": "^2.31.0",
     "@rslib/core": "^0.21.3",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash": "^4.17.24",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "@types/prompts": "^2.4.9",
+    "consola": "^3.4.2",
+    "prompts": "^2.4.2",
+    "tsx": "^4.21.0"
   },
   "dependencies": {
     "lodash": "^4.18.1",
     "mongoose": "^9.4.1",
     "ofetch": "^1.5.1",
-    "pkg": "^5.8.1",
     "rimraf": "^6.1.3",
-    "tsc-alias": "^1.8.16",
-    "tsx": "^4.21.0",
     "typescript": "^6.0.2",
     "zod": "^4.3.6"
   }
