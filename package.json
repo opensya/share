@@ -32,7 +32,8 @@
   },
   "keywords": [
     "opensya",
-    "share"
+    "share",
+    "@opensya/share"
   ],
   "license": "ISC",
   "packageManager": "pnpm@10.32.1",
