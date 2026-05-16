@@ -1,6 +1,6 @@
 {
   "name": "@opensya/share",
-  "version": "0.29.1-alpha.0",
+  "version": "0.29.2-alpha.0",
   "repository": "opensya/share",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -26,7 +26,6 @@
     "dist"
   ],
   "scripts": {
-    "publish:local": "tsx scripts/publish-local.ts",
     "build": "rslib",
     "dev": "tsx rslib --watch",
     "typecheck": "tsc --noEmit"
@@ -44,10 +43,7 @@
     "@types/fs-extra": "^11.0.4",
     "@types/lodash": "^4.17.24",
     "@types/node": "^25.6.0",
-    "@types/prompts": "^2.4.9",
-    "consola": "^3.4.2",
-    "prompts": "^2.4.2",
-    "tsx": "^4.21.0"
+    "@types/prompts": "^2.4.9"
   },
   "dependencies": {
     "lodash": "^4.18.1",
