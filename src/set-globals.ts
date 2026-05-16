@@ -1,6 +1,8 @@
 import lodash from "lodash";
 import * as zod from "zod";
 
+if (!globalThis.z) globalThis.z = zod;
+
 if (!globalThis._) {
   globalThis._ = lodash;
 
@@ -20,5 +22,3 @@ if (!globalThis._) {
     await new Promise((resolve) => setTimeout(resolve, time));
   }
 }
-
-if (!globalThis.z) globalThis.z = zod;

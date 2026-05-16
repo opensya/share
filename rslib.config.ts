@@ -6,6 +6,7 @@ export default defineConfig({
       source: {
         entry: {
           index: "./src/index.ts",
+          "set-globals": "./src/set-globals.ts",
         },
       },
       format: "esm",
@@ -22,6 +23,7 @@ export default defineConfig({
       source: {
         entry: {
           index: "./src/index.ts",
+          "set-globals": "./src/set-globals.ts",
         },
       },
       format: "cjs",

@@ -1,6 +1,6 @@
-import { ApplyDataOptions } from "./apply_data";
+import "./set-globals";
+import type { ApplyDataOptions } from "./apply_data";
 
-export * from "./set-globals";
 export * from "./config";
 export * from "./user";
 export * from "./job";
