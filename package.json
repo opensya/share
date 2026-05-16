@@ -1,6 +1,6 @@
 {
   "name": "@opensya/share",
-  "version": "0.28.9",
+  "version": "0.28.10",
   "repository": "opensya/share",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
