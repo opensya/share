@@ -1,21 +1,15 @@
 {
   "compilerOptions": {
-    "module": "preserve",
-    "target": "ES2023",
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "outDir": "dist",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "outDir": "./dist",
+    "rootDir": ".",
     "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
     "skipLibCheck": true,
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "moduleResolution": "bundler",
-    "useDefineForClassFields": true,
-    "allowImportingTsExtensions": true,
-    "rootDir": "src",
     "paths": {
       "@share": [
         "./src"
@@ -24,12 +18,20 @@
         "./src/*"
       ],
     },
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
     "types": [
       "node"
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
+    "./src/**/*.ts",
+    "./rslib.config.ts"
   ],
+  "exclude": [
+    "dist",
+    "node_modules",
+  ]
 }

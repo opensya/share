@@ -1,5 +1,6 @@
 import "./set-globals";
 import type { ApplyDataOptions } from "./apply_data";
+import type { LoDashStatic } from "lodash";
 
 export * from "./config";
 export * from "./user";
@@ -15,7 +16,7 @@ export * from "./utils";
 
 declare global {
   // @ts-ignore
-  var _: typeof import("lodash");
+  var _: LoDashStatic;
   var z: typeof import("zod");
 
   var apiBaseUrl: string;
@@ -27,7 +28,7 @@ declare module "lodash" {
     isArrayString(value?: any): boolean;
     sleep(
       /** @default 500 */
-      time?: number
+      time?: number,
     ): Promise<void>;
   }
 }

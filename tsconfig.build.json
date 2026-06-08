@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "./src"
+    },
+    "include": [
+        "./src/**/*.ts",
+    ],
+    "exclude": [
+        "./rslib.config.ts",
+        "**/*.spec.ts",
+        "**/*.test.ts",
+        "**/__tests__/**"
+    ]
+}
